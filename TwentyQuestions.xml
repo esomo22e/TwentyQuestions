@@ -1,0 +1,177 @@
+<!--This is my root question-->
+<expr type="binary">
+  <question value="Are you a marvel super hero?"/>
+
+  <!--No to the root question of marvel super heroes-->
+  <expr type ="binary">
+    <question value ="Are you apart of the Justice League?" />
+
+   <!--No to the justice leauge question start-->
+    <expr type = "binary">
+      <question value ="Are you able to morph into an animal?"/>
+
+      <!--No to the morph animal question start-->
+      <expr type ="binary">
+	<question value ="Do you wear a supersuit?" />
+	
+      	<!--No the super suit question start-->
+	<expr type ="binary">
+	  <question value ="Are you half demon?" />
+	  
+	  <!--No to the half-demon question start-->
+	  <expr type="answer">
+	    <answer value ="Static"/>
+	  </expr><!--End of atom is Static-->
+	 
+	  <!--Yes to the half-demon question start-->
+          <expr type ="answer">
+	    <answer value ="Raven"/>
+	  </expr><!--End of atom is Raven-->
+
+	</expr><!--No to the super suit question ends-->
+	
+	<!--Yes to the super suit question starts-->
+	<expr type ="answer">
+	  <anser value = "BumbleBee" />
+	</expr><!--End of atom is BumbleBee-->
+
+      </expr><!--No the morph animal question ends-->
+
+	<!--Yes to the morph animal question start-->
+      <expr type ="answer">
+	<answer value = "Beast Boy" />
+      </expr><!--End of atom is Beast Boy-->
+      
+    </expr><!--No the justice league question ends-->
+
+<!--Yes to justice league -->
+   <!--Yes to the justice league question -->
+    <expr type="binary">
+      <question value ="Are you able to fly?" />
+
+      <!--No to the Flight question-->
+      <expr type ="binary">
+	<question value ="Are you the protector of Gotham City?" />
+	
+	<!--No to the Gotham City?"-->
+	<expr type ="answer">
+	  <answer value = "Flash" />
+	</expr><!--End of atom Flash-->
+	
+	<!--Yes to the Gotham City?"-->
+	<expr type = "answer">
+	  <answer value = "Batman" />
+	</expr><!--End of atom Batman-->
+
+      </expr><!--No to Flight question ends-->
+      
+      <!--Yes to Flight question starts-->
+      <expr type ="binary">
+	<question value = "Do you possess a power ring" /> 
+
+	 <!--No to Power Ring starts-->
+	 <expr type ="answer">
+	   <answer value = "Wonder Woman" />
+	 </expr><!--End of atom Wonder Woman-->
+
+	 <!--Yes to Power Ring starts-->
+	 <expr type ="answer">
+	   <answer value = "Green Latern" />
+	 </expr><!--End of atom Green Latern-->
+
+      </expr><!--Yes to Flight  questions ends-->
+
+    </expr><!--Yes to justice league question ends-->
+      
+  </expr><!--No to the root question ends-->
+
+
+  <!--Yes to the root question-->
+  <expr type="binary">
+    <question value ="Are you wearing a mask?" />
+    
+    <!--No to Mask question-->
+    <expr type ="binary">
+      <question value = "Are you an agent of S.H.I.E.L.D?" />
+
+      <!--No to S.H.I.E.L.D?-->
+      <expr type = "answer">
+	<answer value = "Monica Rambeau" />
+      </expr><!--End of atom Monica Rambeau-->
+
+      <!--Yes to S.H.I.E.L.D-->
+      <expr type = "answer">
+	<answer value = "Nick Fury" />
+      </expr><!--End of atom Nick Fury-->
+      
+    </expr><!--No to Mask question ends-->
+
+    <!--Yes to Mask question starts-->
+    <expr type = "binary">
+      <question value = "Are you one of the X-men?" />
+
+      <!--No to X-Men Question starts-->
+      <expr type = "binary">
+	<question value = "Are you a super genius?" />
+
+	<!--No to Super Genius Question-->
+	<expr type = "binary">
+	  <question value = "Are you from the African Nation of Wakanda?" />
+
+	  <!--No to Wakanda Question-->
+	  <expr type = "answer">
+	    <answer value  = "Spider Man" />
+	  </expr><!--End of atom Spider Man-->
+
+	  <!--Yes to Wakanda Question-->
+	  <expr type = "answer">
+	    <answer value = "Black Panther" />
+	  </expr><!--End of atom Black Panther -->
+
+	</expr><!--No to Super Genius Question ends-->
+
+	<!--Yes to Super Genius Question starts-->
+	<expr type = "binary">
+	  <question value = "Are you a billionare playboy?" />
+	  
+	  <!--No to Billionare question starts-->
+	  <expr type = "answer">
+	    <answer value = "Hulk" />
+	  </expr><!--End of atom Hulk-->
+
+	  <!--Yes to Billionare question starts-->
+	  <expr type = "answer">
+	    <answer value = "Iron Man" />
+	  </expr><!--End of atom Iron Man-->
+
+	</expr><!--Yes to Super Genius Question Ends-->
+
+      </expr><!--No to X-Men Question ends-->	
+      
+      <!--Yes to X-Men Question starts-->
+      <expr type = "binary">
+	<question value = "Do you have telekinetic powers?" />
+	
+	<!--No to manipulate weather?"-->
+	<expr type = "answer">
+	  <answer value = "Wolverine" />
+	</expr><!--End of atom Wolverine-->
+	
+	<!--Yes to manipuate weather-->
+	<expr type = "answer">
+	  <answer value = "Jean Grey" />
+	</expr><!--End of atom Storm-->
+
+      </expr><!--Yes to X-Men Question ends-->
+
+    </expr><!--Yes to mask question ends-->
+
+  </expr><!--Yes to the root question ends-->
+
+</expr><!--Root ends-->
+
+
+
+
+
+
